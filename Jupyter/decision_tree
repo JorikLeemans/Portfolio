@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<Damage &le; 1.5<br/>mse = 7.873<br/>samples = 144<br/>value = 6.549>, fillcolor="#f4c9aa"] ;
+1 [label=<Difficulty &le; 2.5<br/>mse = 5.091<br/>samples = 19<br/>value = 7.526>, fillcolor="#eb9d66"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<Difficulty &le; 1.5<br/>mse = 3.184<br/>samples = 16<br/>value = 7.938>, fillcolor="#e78b49"] ;
+1 -> 2 ;
+3 [label=<mse = 4.76<br/>samples = 10<br/>value = 7.8>, fillcolor="#e89153"] ;
+2 -> 3 ;
+4 [label=<mse = 0.472<br/>samples = 6<br/>value = 8.167>, fillcolor="#e58139"] ;
+2 -> 4 ;
+5 [label=<mse = 9.556<br/>samples = 3<br/>value = 5.333>, fillcolor="#ffffff"] ;
+1 -> 5 ;
+6 [label=<Damage &le; 2.5<br/>mse = 8.128<br/>samples = 125<br/>value = 6.4>, fillcolor="#f5d0b4"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label=<Difficulty &le; 2.5<br/>mse = 4.789<br/>samples = 44<br/>value = 6.727>, fillcolor="#f2c19e"] ;
+6 -> 7 ;
+8 [label=<mse = 4.828<br/>samples = 40<br/>value = 6.85>, fillcolor="#f1bc95"] ;
+7 -> 8 ;
+9 [label=<mse = 2.75<br/>samples = 4<br/>value = 5.5>, fillcolor="#fdf8f3"] ;
+7 -> 9 ;
+10 [label=<Difficulty &le; 2.5<br/>mse = 9.852<br/>samples = 81<br/>value = 6.222>, fillcolor="#f7d7c1"] ;
+6 -> 10 ;
+11 [label=<mse = 9.933<br/>samples = 60<br/>value = 6.0>, fillcolor="#f9e1d0"] ;
+10 -> 11 ;
+12 [label=<mse = 9.075<br/>samples = 21<br/>value = 6.857>, fillcolor="#f1bb95"] ;
+10 -> 12 ;
+}
